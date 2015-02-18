@@ -18,6 +18,8 @@ L.tileLayer('tiles/{z}/{x}/{y}.png', {
 	errorTileUrl: 'tiles/empty.png'
 }).addTo(map);
 
+L.control.scale().addTo(map);
+
 var featureGroup = L.featureGroup().addTo(map);
 
 var drawControl = new L.Control.Draw({
