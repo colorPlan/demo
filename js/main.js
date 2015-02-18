@@ -15,6 +15,7 @@ L.tileLayer('tiles/{z}/{x}/{y}.png', {
 	bounds: mapBounds,
 	attribution: 'Map data &copy; ColorPlan',
 	noWrap: true
+	errorTileUrl: 'tiles/empty.png'
 }).addTo(map);
 
 var featureGroup = L.featureGroup().addTo(map);
