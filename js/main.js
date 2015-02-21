@@ -38,3 +38,6 @@ var drawControl = new L.Control.Draw({
 map.on('draw:created', function(e) {
 	featureGroup.addLayer(e.layer);
 });
+
+new L.Calibrator( map );
+
