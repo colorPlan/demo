@@ -7,8 +7,8 @@ var map = L.map('map', {
 }).setView([-40, 80], 3 );
 
 var mapBounds = new L.LatLngBounds(
-	map.unproject([0, 6912], mapMaxZoom),
-	map.unproject([9984, 0], mapMaxZoom));
+	map.unproject([0, 6912], 0),
+	map.unproject([9984, 0], 0));
 
 L.tileLayer('tiles/{z}/{x}/{y}.png', {
 	minZoom: mapMinZoom,
