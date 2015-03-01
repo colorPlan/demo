@@ -1,4 +1,4 @@
-var mapMinZoom = 3;
+var mapMinZoom = 0;
 var mapMaxZoom = 6;
 var map = L.map('map', {
 	maxZoom: mapMaxZoom,
@@ -28,7 +28,7 @@ var drawControl = new L.Control.Draw({
 		polyline: {
 			shapeOptions: {
 				color : '#FF0000',
-				weight: 8,
+				weight: 4,
 				opacity: 1
 			}
 		}
